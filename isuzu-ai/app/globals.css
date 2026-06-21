@@ -1,0 +1,132 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --isuzu-gold: #D4AF37;
+  --isuzu-champagne: #E6C77D;
+  --isuzu-violet: #7C3AED;
+  --isuzu-soft-violet: #A78BFA;
+  --isuzu-dark: #1A1A1A;
+  --isuzu-bg: #F8F8F8;
+}
+
+body {
+  background-color: var(--isuzu-bg);
+  color: var(--isuzu-dark);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D4AF37;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b59026;
+}
+
+/* Shimmer text effect */
+.shimmer-text {
+  background: linear-gradient(90deg, #1A1A1A 0%, #D4AF37 50%, #1A1A1A 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 3s linear infinite;
+}
+
+/* Gold glow */
+.gold-glow {
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.3), 0 0 40px rgba(212, 175, 55, 0.1);
+}
+
+.violet-glow {
+  box-shadow: 0 0 20px rgba(124, 58, 237, 0.3), 0 0 40px rgba(124, 58, 237, 0.1);
+}
+
+/* Markdown content styles */
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4 {
+  font-weight: 600;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  color: #1A1A1A;
+}
+
+.markdown-body p {
+  margin-bottom: 0.75em;
+  line-height: 1.7;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  margin-left: 1.25em;
+  margin-bottom: 0.75em;
+}
+
+.markdown-body li {
+  margin-bottom: 0.25em;
+}
+
+.markdown-body code {
+  background: #f0f0f0;
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  font-size: 0.9em;
+  color: #7C3AED;
+}
+
+.markdown-body pre {
+  margin-bottom: 1em;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.markdown-body blockquote {
+  border-left: 3px solid #D4AF37;
+  padding-left: 1em;
+  margin-left: 0;
+  color: #555;
+  font-style: italic;
+}
+
+.markdown-body a {
+  color: #7C3AED;
+  text-decoration: underline;
+}
+
+.markdown-body table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1em;
+}
+
+.markdown-body th,
+.markdown-body td {
+  border: 1px solid #e5e5e5;
+  padding: 0.5em;
+  text-align: left;
+}
+
+.markdown-body th {
+  background: #f5f5f5;
+  font-weight: 600;
+}
+
+/* Loading screen gradient */
+.loading-gradient {
+  background: linear-gradient(135deg, #F8F8F8 0%, #FFFFFF 50%, #f3e8ff 100%);
+}
